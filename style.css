@@ -1,0 +1,156 @@
+html {
+  /* Makes 1 rem = 10px for 16px base font size */
+  font-size: 62.5%;
+  font-family: "Open Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: #1b1b1b;
+  --code-background: #f7f7f7;
+  --mark-color: #e2e2e2;
+}
+
+.dark-theme {
+  --primary-color: #1b1b1b;
+  --secondary-color: white;
+  --code-background: #343434;
+  --mark-color: #4e4e4e;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 1.7rem;
+  color: var(--secondary-color);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+#navbar {
+  width: 100%;
+}
+
+#navbar header {
+  padding: 2rem;
+  font-size: 2.88rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+#toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#toggle span {
+  font-size: 1.7rem;
+}
+
+#toggle img {
+  width: 2.5rem;
+  position: relative;
+  top: 0.65rem;
+}
+
+#website-title {
+  text-align: center;
+}
+
+#nav-link-list {
+  height: 21rem;
+  overflow-y: auto;
+  border: solid 1px var(--secondary-color);
+}
+
+#nav-link-list .nav-link {
+  border: solid 1px var(--secondary-color);
+  display: block;
+  padding: 1rem 0 1rem 2rem;
+  margin-top: -1px;
+  text-decoration: none;
+}
+
+.main-section header {
+  font-size: 2.88rem;
+  font-weight: 500;
+  padding: 1.5rem;
+}
+
+.main-section p {
+  margin: 2.2rem;
+}
+
+.main-section ul {
+  margin: 2.2rem;
+  margin-left: 6.5rem;
+}
+
+.main-section li {
+  margin: 0.9rem;
+}
+
+mark {
+  background-color: var(--mark-color);
+  border-radius: 5px;
+}
+
+.code {
+  background: var(--code-background);
+  border-radius: 5px;
+  margin: 5rem;
+  color: black;
+}
+
+@media (min-width: 815px) {
+  #navbar:not(#toggle) {
+    width: 30.2rem;
+    height: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    float: left;
+  }
+
+  #navbar header {
+    padding: 1rem;
+  }
+
+  #navbar #website-title {
+    padding: 1rem;
+    border: solid 1px var(--secondary-color);
+    border-left: none;
+    border-top: none;
+  }
+  #navbar a:first-of-type {
+    border-top: 1px solid var(--secondary-color);
+  }
+
+  #navbar a:last-of-type {
+    border-bottom: 1px solid var(--secondary-color);
+  }
+  #nav-link-list {
+    overflow: visible;
+    border: none;
+  }
+
+  #nav-link-list .nav-link {
+    border-left: none;
+    padding-top: 2.9rem;
+    padding-bottom: 2.9rem;
+  }
+
+  .main-section {
+    margin-left: 324px;
+  }
+
+  .main-section header:first-of-type {
+    padding-top: 6rem;
+  }
+}

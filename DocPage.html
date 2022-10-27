@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="website-title">
+        <header>HTML Documentation</header>
+        <div id="toggle">
+          <img src="images/moon.png" alt="Dark/Light Mode Icon" id="icon" />
+          <span>Theme</span>
+        </div>
+      </div>
+      <div id="nav-link-list">
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#basic_structure">Basic Structure</a>
+      <a class="nav-link" href="#heading_elements">Heading Elements</a>
+      <a class="nav-link" class="nav-link" href="#the_paragraph_element"
+        >The Paragraph Element</a
+      >
+      <a class="nav-link" href="#text_formatting_elements"
+        >Text Formatting Elements</a
+      >
+      <a class="nav-link" href="#helpful_documentation_websites_to_use"
+        >Helpful Documentation Websites To Use</a
+      >
+      <a class="nav-link" href="#helpful_youtube_channels_to_view">Helpful YouTube Channels To View</a>
+      </div>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>
+          <mark>HTML (HyperText Markup Language)</mark> is a markup language that is fundamental in the construction of a website. Although there are other pieces of code that can go into making a website(i.e. CSS and Javascript), HTML is the only code that is vital to all websites. Without HTML, there would be no website to work with.
+        </p>
+        <p>
+          As the name implies, HTML is a markup language. This is because HTML
+          involves content that is marked up with certain code that indicate
+          how each bit of content within the website should be presented. The
+          code that marks up a webpage's content in this manner is refered to as
+          an <mark>element</mark>.
+        </p>
+        <p>
+          Listed below are some examples of HTML elements and how they would be
+          seen in an HTML file:
+        </p>
+        <ul id="example-elements">
+          <li>HTML Element(<code><span><</span>html><span><</span>/html></code>)</li>
+          <li>Head Element(<code><span><</span>head><span><</span>/head></code>)</li>
+          <li>Body Element(<code><span><</span>body><span><</span>/body></code>)</li>
+          <li>Paragraph Element(<code><span><</span>p><span><</span>/p></code>)</li>
+          <li>Division Element(<code><span><</span>div><span><</span>/div></code>)</li>
+        </ul>
+        <p>
+          As seen above, HTML elements commonly consist of two tags. The
+          first tag is known as an <mark>opening tag</mark> while the last tag
+          is known as an <mark>ending tag</mark>. Something like
+          <span><</span>p> would be an opening tag while <span><</span>/p> would be a closing tag. Notice that the way to
+          distinguish between the two is the dash that comes right after the
+          starting angle bracket. Note that some elements only consist of one
+          tag(i.e <span><</span>br />). These tags are known as
+          <mark>self closing tags</mark>.
+        </p>
+      </section>
+      <section class="main-section" id="basic_structure">
+        <header>Basic Structure</header>
+        <p>Listed below is the basic structure that an HTML page generally follows:</p>
+        <div class="code">
+          <code>
+            <span><</span>!DOCTYPE html><br />
+            <span><</span>html>
+            <br />
+            <span><</span>head>
+            <br />
+            <span><</span>title>Page Title<span><</span>/title>
+            <br />
+            <span><</span>link rel="stylesheet" href="style.css" /> <br /><span
+              ><</span
+            >/head ><br />
+            <span><</span>body> <br />
+            <span><</span>/body>
+            <br />
+            <span><</span>/html>
+          </code>
+        </div>
+        <p>Here is a brief explanation of what each of these elements mean:</p>
+        <ul>
+          <li>
+            The
+            <mark
+              ><code><span><</span>!DOCTYPE html></code></mark
+            >
+            declaration indicates which verison of HTML the code is written in.
+            In this case, <mark>HTML5</mark> is being used.
+          </li>
+          <li>
+            The
+            <mark
+              ><code><span><</span>html></code></mark
+            >
+            element is referred to as the root of the HTML document and it will
+            contain all other HTML elements except the
+            <code><span><</span>!DOCTYPE html></code> declaration.
+          </li>
+          <li>
+            The
+            <mark
+              ><code><span><</span>head></code></mark
+            >
+            element contains the meta data of the webpage which is data that is
+            usually not visible on the website itself.
+          </li>
+          <li>
+            The
+            <mark
+              ><code><span><</span>title></code></mark
+            >
+            element contains the title of the webpage. This title is displayed
+            on the website tab at the top of the web browser.
+          </li>
+          <li>
+            The
+            <mark
+              ><code><span><</span>link></code></mark
+            >
+            element allows us to connect a CSS file that contains styling for
+            the page. CSS will not be covered in this documentation page. Nonetheless, it is a good idea to
+            be aware of the link element and what it looks like.
+          </li>
+          <li>
+            The
+            <mark
+              ><code><span><</span>body></code></mark
+            >
+            element contains all the visible elements of the webpage.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="heading_elements">
+        <header>Heading Elements</header>
+        <p>
+          <mark>Heading elements</mark> contain the headings that are within a
+          webpage. There are six types of heading elements and they range from
+          <mark>h1</mark> to <mark>h6</mark>.
+        </p>
+        <p>
+          The <mark>h1</mark> element contains a heading that should describe
+          the overall purpose of the page. There should only be one h1 within a
+          webpage.
+        </p>
+        <p>
+          The heading elements are arranged in a hierarchy where the
+          <mark>h1</mark> element is followed by <mark>h2</mark> elements which
+          in turn are followed by <mark>h3</mark> elements. This pattern would
+          continue until one reaches the <mark>h6</mark> elements. Think of
+          heading elements as being similar to matryoshka dolls(the dolls that
+          have layers such that opening up one doll leads to another smaller
+          doll).
+        </p>
+        <p>
+          Shown below is an example of how the hierarchy of headings would work
+          within a webpage:
+        </p>
+        <div class="code">
+          <code>
+            <span><</span>h1>Dogs<span><</span>/h1><br /><br />
+            <span><</span>h2>Breeds<span><</span>/h2><br />
+            <span><</span>h3>Golden Retriever<span><</span>/h3><br />
+            <span><</span>h3>Poodle<span><</span>/h3><br /><br />
+            <span><</span>h2>Dogs vs Cats<span><</span>/h2><br />
+            <span><</span>h3>Dogs Are More Loving<span><</span>/h3><br />
+            <span><</span>h3>Dogs Are More Loyal<span><</span>/h3><br />
+          </code>
+        </div>
+      </section>
+      <section class="main-section" id="the_paragraph_element">
+        <header>The Paragraph Element</header>
+        <p>
+          The paragraph element(denoted as <mark><span><</span>p></mark>)
+          contains text that make up a paragraph. The paragraph element, by
+          default, creates space around it to seperate it from other nearby
+          elements such as other pargraph elements.
+        </p>
+        <p>The code below shows the code that goes into making a simple paragraph. </p>
+        <div class="code">
+          <code>
+            <span><</span>p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repudiandae obcaecati laboriosam eaque maxime error vel incidunt repellat, quasi, molestias vero voluptatem modi quisquam debitis? Eius neque qui expedita aliquid!
+            <span><</span>/p>
+          </code>
+        </div>
+        <p>The text within the example paragraph is filler text commonly referred to as <mark>lorem ipsum text</mark>. Filler text may be needed when one is planning out the layout of a website. Here is a <a href="https://loremipsum.io/generator/?n=5&t=p" target="_blank">lorem ipsum text generator</a> that may be helpful later on.</p>
+      </section>
+      <section class="main-section" id="text_formatting_elements">
+        <header>Text Formatting Elements</header>
+        <p>
+          An HTML webpage will almost always consist of text. Therefore, it is
+          important to know ways that one can modify such text.
+        </p>
+        <p>Listed below are some examples of text formatting elements:</p>
+        <ul>
+          <li><mark>Bold Text(<code><span><</span>b><span><</span>/b></code>)</span></li>
+          <li><mark>Italicized Text(<code><span><</span>i><span><</span>/i></code>)</mark></li>
+          <li><mark>Subscript Text(<code><span><</span>sub><span><</span>/sub></code>)</mark></li>
+          <li><mark>Superscript Text(<code><span><</span>sup><span><</span>/sup></code>)</mark></li>
+        </ul>
+      </section>
+      <section class="main-section" id="helpful_documentation_websites_to_use">
+        <header>Helpful Documentation Websites To Use</header>
+        <p>Listed below are some documentation websites that are helpful references to look at when working with HTML:</p>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"  target="_blank"><mark>MDN Web Docs</mark></a></li>
+          <li><a href="https://www.w3schools.com/html/default.asp" target="_blank"><mark>W3 Schools</mark></a></li>
+          <li><a href="https://devdojo.com/guide/html" target="_blank"><mark>Dev Dojo</mark></a></li>
+        </ul>
+      </section>
+      <section class="main-section" id="helpful_youtube_channels_to_view"><header>Helpful YouTube Channels To View</header>
+        <p>In addition to referencing documentation websites, one may also find it helpful to view YouTube videos that teach HTML concepts. Listed below are some YouTube channels that provide HTML content:</p>
+        <ul>
+          <li><a href="https://www.youtube.com/c/WebDevSimplified" target="_blank"><mark>Web Dev Simplified</mark></a></li>
+          <li><a href="https://www.youtube.com/kepowob" target="_blank"><mark>Kevin Powell</mark></a></li>
+          <li><a href="https://www.youtube.com/c/BroCodez" target="_blank"><mark>Bro Code</mark></a></li>
+        </ul>
+      </section>
+    </main>
+
+
+    <script>
+      var icon = document.getElementById("icon");
+      var toggle = document.getElementById("toggle");
+      toggle.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "images/sun.png";
+        } else {
+          icon.src = "images/moon.png";
+        }
+      };
+    </script>
+  </body>
+</html>
