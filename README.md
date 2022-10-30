@@ -10,4 +10,4 @@ This webpage also implements a dark mode feature. This feature allows the user t
 
 ## Credits
 
-This project was created by just me. The outline/idea for this project came from the [freeCodeCamp responsive web design course.](https://www.freecodecamp.org/learn/2022/responsive-web-design/). The tutorial I referenced to implement the dark mode feature is [this video.](https://www.youtube.com/watch?v=9LZGB3OLXNQ)
+This project was created by just me. The outline/idea for this project came from the [freeCodeCamp responsive web design course](https://www.freecodecamp.org/learn/2022/responsive-web-design/). The tutorial I referenced to implement the dark mode feature is [this video.](https://www.youtube.com/watch?v=9LZGB3OLXNQ)
