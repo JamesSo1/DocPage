@@ -10,4 +10,4 @@ This webpage also implements a dark mode feature. This feature allows the user t
 
 ## Credits
 
-This project was created by just me. The idea for this project came from the freeCodeCamp responsive web design course.
+This project was created by just me. The idea for this project came from freeCodeCamp.
