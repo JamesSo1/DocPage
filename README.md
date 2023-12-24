@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project is a sample documentation page. Please do not take the actual content of the documentation page seriously. Instead, consider it to be filler text.
+This project is a sample documentation page. Please do not take the actual content of the documentation page seriously(although I did put effort into making the content accurate). Instead, consider it to be filler text.
 
 The content and the navigation bar of the webpage are responsive so that it may be presentable on all devices regardless of their screen width. This responsiveness was achieved through the use of media queries.
 
